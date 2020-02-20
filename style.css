@@ -1,0 +1,60 @@
+body {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 2rem 2rem;
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+}
+
+input {
+    font-size: 1rem;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+
+#order-acrostic .letter {
+    font-family: monospace;
+}
+
+#order-acrostic li ~ li {
+    margin-top: 1rem;
+}
+
+#result {
+    display: grid;
+    grid-auto-flow: column;
+    align-content: center;
+    grid-template-columns: 3rem;
+    grid-auto-columns: min-content;
+    grid-gap: 0.5rem 1rem;
+    align-items: center;
+}
+
+.op {
+    font-weight: bold;
+    text-align: center;
+}
+.op.present {
+    background: hsl(0,50%,90%);
+}
+
+.op, .token {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem 0.5rem;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+
+.token {
+    font-family: monospace;
+    background: hsl(60,50%,90%);
+}
+.token.involved {
+    background: hsl(240,50%,50%);
+    color: white;
+}

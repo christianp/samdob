@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>SAMDOB - The order of operations</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section>
+            <p>
+                <label for="order">The order of operations is:</label>
+                <input id="order" type="text" value="BO(DM)(AS)">
+            </p>
+            <ul id="order-acrostic"></ul>
+            <p><a href="explanation.html">Explanation</a>.</p>
+        </section>
+        <section>
+            <p>
+                <label for="expression">The expression</label>
+                <input id="expression" type="text" value="1+2*3-8/4">
+            </p>
+            <p>
+                Evaluates to:
+            </p>
+            <div id="result"></div>
+        </section>
+    </body>
+</html>
